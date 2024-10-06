@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的自动化测试平台</title>
+    <!-- 引入 lottie-web 库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+    <!-- 样式设计 -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #666666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        #lottie-animation {
+            width: 100%;
+            height: 300px;
+            margin: 0 auto 20px auto;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+<!-- 内容容器 -->
+<div class="container">
+    <!-- 平台标题 -->
+    <div class="title">我的自动化测试平台</div>
+    <!-- 平台描述 -->
+    <div class="description">
+        欢迎使用“我的自动化测试平台”，这是一个用于管理和自动化多模态数据集测试的工具。
+    </div>
+    <!-- 动画容器 -->
+    <div id="lottie-animation"></div>
+</div>
+
+<!-- 备案信息 -->
+<div class="footer">
+    © 2024 <a href="https://beian.miit.gov.cn/" target="_blank">备案号</a> <a href="https://beian.miit.gov.cn/" target="_blank">ICP备xxx号</a> 保留所有权利
+</div>
+
+<!-- JavaScript 加载 Lottie 动画 -->
+<script>
+    // 使用 Lottie 加载动画
+    lottie.loadAnimation({
+        container: document.getElementById('lottie-animation'), // 指定动画容器
+        renderer: 'svg', // 渲染器类型
+        loop: true, // 是否循环播放
+        autoplay: true, // 是否自动播放
+        path: './animation/Animation-secure.json', // 替换为你选择的 Lottie 动画的 JSON 文件路径
+    });
+</script>
+</body>
+</html>
